@@ -12,7 +12,8 @@
 - add difficulty level
     - variating the range where the number can be in 
     - variating the time to get the answer
-
+    - future project: record system
+    
 ## second option 
 - I choose a number 
 - computer guesses 
