@@ -13,6 +13,8 @@
     - variating the range where the number can be in 
     - variating the time to get the answer
     - future project: record system
+    - maybe smarten code by using self.init modul ...
+    - when the user should make an input create visual dot or blinking character 
     
 ## second option 
 - I choose a number 
