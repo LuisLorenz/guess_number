@@ -143,4 +143,15 @@ Please insert the level of difficulty ...'''
     print(f'Your guess was right. The searched number was "{searched_number}"!\nTime record: {rounded_time} s')
 
     # playstyle 2 
+
+    if playstyle == 2:
+      
+      choose_num = '''
+  Choose a random integer ...'''
+
+      computer_guess = random.randint(-1000000, 1000000)
+
+      while computer_guess == False:
+        pass        
+
 game()

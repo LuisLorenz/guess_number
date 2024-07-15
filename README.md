@@ -14,7 +14,8 @@
     - variating the time to get the answer
     - future project: record system
     - maybe smarten code by using self.init modul ...
-    - when the user should make an input create visual dot or blinking character 
+    - future project: when the user should make an input create visual dot or blinking character 
+    - future: start the game in the terminal 
     
 ## second option 
 - I choose a number 
@@ -22,5 +23,5 @@
 - user responds
     - too high
     - too low
-    - that was correct
+    - that was correct 
 
