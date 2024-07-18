@@ -144,14 +144,54 @@ Please insert the level of difficulty ...'''
 
     # playstyle 2 
 
-    if playstyle == 2:
+  if playstyle == 2:
       
-      choose_num = '''
+    choose_num = '''
   Choose a random integer ...'''
 
-      computer_guess = random.randint(-1000000, 1000000)
+    for char in choose_num:
+      sys.stdout.write(char)
+      sys.stdout.flush()
+      time.sleep(0.05)
 
-      while computer_guess == False:
-        pass        
+      if char in ".!?": 
+        time.sleep(0.5)
+
+      x = -1000000
+      y = 1000000
+
+      computer_guess_value = False
+
+      while computer_guess_value != True:
+        computer_guess = random.randint(x,y)
+        print(f'Is your searched number "{computer_guess}"?')
+        eva_computer_guess = int(input('''- "1" for too high
+- "2" for too low
+- "3" for is equal
+'''))
+        
+        if eva_computer_guess == 1: 
+          y = computer_guess - 1         
+                                                
+        elif eva_computer_guess == 2:
+          x = computer_guess + 1
+
+        elif eva_computer_guess == 3:
+          computer_guess_value = True
+          
+        else:
+          print('Your input is invalid. Please try again!')
+      
+      end = f'Nice, your number was "{computer_guess}"!\n'
+      
+      for char in end:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(0.05)
+
+      break
+
+
+
 
 game()
